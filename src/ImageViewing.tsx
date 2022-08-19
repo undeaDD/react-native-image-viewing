@@ -100,7 +100,8 @@ function ImageViewing({
       animationType={animationType}
       onRequestClose={onRequestCloseEnhanced}
       supportedOrientations={["portrait"]}
-      hardwareAccelerated
+      hardwareAccelerated={true}
+      useNativeDriver={true}
     >
       <StatusBarManager presentationStyle={presentationStyle} />
       <View style={[styles.container, { opacity, backgroundColor }]}>
